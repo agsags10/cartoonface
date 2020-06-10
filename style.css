@@ -11,7 +11,7 @@ body {
   margin-bottom: 5%;
   padding: 5% 5%;
   /* padding: 20px; */
-  width: 65%;
+  width: 90%;
   /* height: 50vw; */
   border-radius: 10px;
   border: solid 2px rgba(0,123,255,.25);
@@ -55,7 +55,7 @@ body {
   border-radius: 10px;
   border: dashed 2px #35465d;
   background-color: #ffffff;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
 }
 
