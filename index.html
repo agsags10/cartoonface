@@ -184,6 +184,57 @@
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
             console.log(prediction[0].className);
             var resultMessege;
+            var resultImage
+            switch (prediction[0].className) {
+                case "맘마미안-강세라":
+                    resultImage = faceimage.setAttribute("src","img/gangsera.jpg");
+                    break;
+                    case "맘마미안-연금옥":
+                    resultImage = faceimage.setAttribute("src","img/yeongeumog.jpg");
+                    break;
+                    case "여신강림-임주경":
+                    resultImage = faceimage.setAttribute("src","img/imjugyeong.jpg");
+                    break;
+                    case "외모지상주의-미진":
+                    resultImage = faceimage.setAttribute("src","img/mijin.jpg");
+                    break;
+                    case "외모지상주의-수정":
+                    resultImage = faceimage.setAttribute("src","img/sujeong.jpg");
+                    break;
+                    case "외모지상주의-하늘":
+                    resultImage = faceimage.setAttribute("src","img/haneul.jpg");
+                    break;
+                    case "유미의 세포들-강이다":
+                    resultImage = faceimage.setAttribute("src","img/gangida.jpg");
+                    break;
+                    case "유미의 세포들-김유미":
+                    resultImage = faceimage.setAttribute("src","img/gimyumi.jpg");
+                    break;
+                    case "이두나-김진주":
+                    resultImage = faceimage.setAttribute("src","img/gimjinju.jpg");
+                    break;
+                    case "이두나-이두나":
+                    resultImage = faceimage.setAttribute("src","img/iduna.jpg");
+                    break;
+                    case "이두나-최이라":
+                    resultImage = faceimage.setAttribute("src","img/choeila.jpg");
+                    break;
+                    case "이태원 클라쓰-오수아":
+                    resultImage = faceimage.setAttribute("src","img/osua.png");
+                    break;
+                    case "이태원 클라쓰-조이서":
+                    resultImage = faceimage.setAttribute("src","img/joiseo.jpg");
+                    break;
+                    case "재혼황후-나비에 황후":
+                    resultImage = faceimage.setAttribute("src","img/nabie.jpg");
+                    break;
+                    case "재혼황후-라스타":
+                    resultImage = faceimage.setAttribute("src","img/laseuta.jpg");
+                    break;
+                default:
+                    resultImage = "알수없음"
+            }
+            
             switch (prediction[0].className) {
                 case "맘마미안-강세라":
                     resultMessege = "맘마미안-강세라"
@@ -239,55 +290,7 @@
             $('.result-messege').html(resultMessege);
             
             
-            switch (prediction[0].className) {
-                case "맘마미안-강세라":
-                    resultMessege = faceimage.setAttribute("src","img/gangsera.jpg");
-                    break;
-                    case "맘마미안-연금옥":
-                    resultMessege = faceimage.setAttribute("src","img/yeongeumog.jpg");
-                    break;
-                    case "여신강림-임주경":
-                    resultMessege = faceimage.setAttribute("src","img/imjugyeong.jpg");
-                    break;
-                    case "외모지상주의-미진":
-                    resultMessege = faceimage.setAttribute("src","img/mijin.jpg");
-                    break;
-                    case "외모지상주의-수정":
-                    resultMessege = resultMessege = faceimage.setAttribute("src","img/sujeong.jpg");
-                    break;
-                    case "외모지상주의-하늘":
-                    resultMessege = faceimage.setAttribute("src","img/haneul.jpg");
-                    break;
-                    case "유미의 세포들-강이다":
-                    resultMessege = faceimage.setAttribute("src","img/gangida.jpg");
-                    break;
-                    case "유미의 세포들-김유미":
-                    resultMessege = faceimage.setAttribute("src","img/gimyumi.jpg");
-                    break;
-                    case "이두나-김진주":
-                    resultMessege = faceimage.setAttribute("src","img/gimjinju.jpg");
-                    break;
-                    case "이두나-이두나":
-                    resultMessege = faceimage.setAttribute("src","img/iduna.jpg");
-                    break;
-                    case "이두나-최이라":
-                    resultMessege = faceimage.setAttribute("src","img/choeila.jpg");
-                    break;
-                    case "이태원 클라쓰-오수아":
-                    resultMessege = faceimage.setAttribute("src","img/osua.png");
-                    break;
-                    case "이태원 클라쓰-조이서":
-                    resultMessege = faceimage.setAttribute("src","img/joiseo.jpg");
-                    break;
-                    case "재혼황후-나비에 황후":
-                    resultMessege = faceimage.setAttribute("src","img/nabie.jpg");
-                    break;
-                    case "재혼황후-라스타":
-                    resultMessege = faceimage.setAttribute("src","img/laseuta.jpg");
-                    break;
-                default:
-                    resultMessege = "알수없음"
-            }
+            
             
 
 
