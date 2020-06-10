@@ -80,7 +80,8 @@ body {
   font-weight: 100;
   text-transform: uppercase;
   color: #35465d;
-  padding: 60px 0;
+    padding-top: 5%;
+    padding-bottom: 30%;
     font-family: NanumSquareR;
     font-size: 1.5rem;
     line-height: 1.53;
